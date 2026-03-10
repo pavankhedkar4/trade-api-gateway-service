@@ -1,0 +1,5 @@
+
+jwt:
+  secret: 2372599623A7FC468CF2E1A23BE5D123456
+  expiration: 3600000 # 1 hour in milliseconds
+ 
