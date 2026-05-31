@@ -16,7 +16,7 @@ public class ApiGatewayConfiguration {
 	        return builder.routes()
 	            .route("login-service", r -> r.path("/api/login/**")
 	                .uri("http://localhost:8080")) // No auth needed for login
-	            .route("user-service", r -> r.path("/user/**")
+	            .route("integration-service", r -> r.path("/api/client/**")
 	                .filters(f -> f.filter(authFilter))
 	                .uri("http://localhost:8082")) // Protected route
 	            .build();
